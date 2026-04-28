@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<HBox prefHeight="663.0" prefWidth="673.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ukdw.rplbo.soal_ug_javafx.AppController">
+   <children>
+      <VBox prefHeight="428.0" prefWidth="449.0" spacing="20.0">
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+         <children>
+            <ComboBox fx:id="option" prefWidth="150.0" />
+            <TableView fx:id="table" prefHeight="595.0" prefWidth="296.0">
+              <columns>
+                <TableColumn fx:id="column1" prefWidth="75.0" text="C1" />
+                <TableColumn fx:id="column2" prefWidth="75.0" text="C2" />
+                  <TableColumn fx:id="column3" prefWidth="75.0" text="C3" />
+              </columns>
+            </TableView>
+         </children>
+      </VBox>
+      <VBox prefHeight="428.0" prefWidth="449.0" spacing="20.0">
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+         <children>
+            <LineChart fx:id="linechart">
+              <xAxis>
+                <CategoryAxis side="BOTTOM" />
+              </xAxis>
+              <yAxis>
+                <NumberAxis side="LEFT" />
+              </yAxis>
+            </LineChart>
+            <BarChart fx:id="barchart">
+              <xAxis>
+                <CategoryAxis side="BOTTOM" />
+              </xAxis>
+              <yAxis>
+                <NumberAxis side="LEFT" />
+              </yAxis>
+            </BarChart>
+            <PieChart fx:id="piechart" />
+         </children>
+      </VBox>
+   </children>
+</HBox>
